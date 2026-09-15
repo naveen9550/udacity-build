@@ -84,7 +84,7 @@ jobs:
       run:
         working-directory: starter/frontend
     env:
-      REACT_APP_MOVIE_API_URL: ${{ secrets.REACT_APP_MOVIE_API_URL || 'http://localhost:5000' }}
+      REACT_APP_MOVIE_API_URL: ${{ secrets.REACT_APP_MOVIE_API_URL || 'http://a86764c41c6e44936bedb8b73a2fdb98-175652124.us-east-1.elb.amazonaws.com' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
